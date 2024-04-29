@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mejor web del mundo</title>
-
+    <!-- COmentario de HTML -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Qwitcher+Grypen&family=Rajdhani&display=swap" rel="stylesheet">
+<script src="./script.js" defer></script>
 </head>
-<ul type="none">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-</ul>
-<ol type="I">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-</ol>
+
 <body>
+
+    <div id="caja">
+       AAAAA Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam consequatur non aliquid corporis, voluptates laborum ullam ab quas eos consequuntur repellendus, a aut earum laudantium nostrum exercitationem ad. Natus, ab?
+    </div>
+
+
+    <main>
+        <div class="colDer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis excepturi officia provident eius dolorem aut ratione rem accusantium placeat, corrupti nulla cupiditate, officiis consequatur labore, in tenetur quasi. Ex, molestias?</div>
+        <div class="colIzq"> <img id="imagenInteractiva" src="http://placehold.co/200x200" alt=""></div>
+    </main>
+
+
     <div>
         <h1>La web de  Steve, el mejor</h1>
-        <p><strong> Steve</strong> es profesor del itba. (probablemente el mejor) <br>
+        <!--  -->        
+        <p class="letraGrande margenIzquierdo"><strong> Steve</strong> es profesor del itba. (probablemente el mejor) <br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sed nulla suscipit quis quaerat autem reiciendis praesentium inventore maiores, saepe reprehenderit corporis eligendi maxime rem voluptatum exercitationem modi consectetur delectus.
+    </p>
+    <p id="parrafoEnBlanco" class="letraGrande margenIzquierdo">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi error, qui laudantium mollitia illo tempora quia tempore enim autem inventore quod impedit quidem distinctio eos beatae sit, adipisci recusandae quam.
     </p>
     <a href="http://google.com">Hipervinculo</a>
     
     <a href="http://linkedin.com/in/estebanpiazza" target="_blank">
-        <img src="./images/facha.jpeg" alt="Foto de Steve super fachero">
+        <img src="./images/facha.jpeg" alt="Foto de Steve super fachero" class="fomatoImagenStandar">
     </a>
     
     </div>
@@ -37,4 +45,19 @@
     <div>cualquier cosa</div><div>al lado</div>
     
 </body>
+<script>
+    let persona={nombre:"Pepe",apellido:"Piazza"}
+    console.log("HOLA")
+    let todosLosDivs = document.getElementsByTagName("div")
+    let caja1 =  document.getElementById("caja")
+    caja1.innerHTML=`<h1>Hola ${persona.nombre}</h1><p>Esto es un parrafo</p>`
+    caja1.style.backgroundColor = "yellow"
+
+    let imagenInteractiva = document.getElementById("imagenInteractiva")
+
+    imagenInteractiva.addEventListener("click", function(){
+        alert ("NO ME TOQUES")
+    })
+
+</script>
 </html>

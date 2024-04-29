@@ -1,0 +1,45 @@
+*{
+    border:1px solid red;
+}
+
+#caja{
+    display: block;
+    width: 50% ;
+/*     border:20px  black solid;
+    padding:20px;
+    margin:20px; */
+}
+
+body{
+    background-color: rgb(79, 147, 16);
+}
+
+#parrafoEnBlanco{ /* esto es un ID*/
+ 
+        font-family: "Niramit", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      
+}
+
+.letraGrande{ /* esto es una clase */
+    font-size: 30px;
+}
+
+.margenIzquierdo{
+    margin-left: 50px;
+}
+
+
+.fomatoImagenStandar{
+    border:10px solid black;
+}
+
+
+
+
+@media screen and (max-width: 600px) { /* del 0 al 600 */
+body{}
+h1{}
+.fomatoImagenStandar{}
+  }
